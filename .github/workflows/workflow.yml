@@ -5,11 +5,11 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  
+
 jobs:
   build:
-    runs-on: : ubuntu-latest
-    container: pyhton:3.9-slim
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
     steps:
       - name: Checkout
         uses: actions/checkout@v3
